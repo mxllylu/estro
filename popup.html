@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AstroLocal</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>AstroLocal</h1>
+  <div id="onboarding">
+    <p>Enter your Zodiac Sign:</p>
+    <input type="text" id="zodiac-sign" placeholder="e.g., Leo, Aries">
+    <button id="save-sign">Save</button>
+  </div>
+  <div id="main-content" style="display: none;">
+    <h2 id="forecast-title"></h2>
+    <p id="forecast-summary"></p>
+    <div id="recommendations"></div>
+    <button id="export-sheets">Export to Sheets</button>
+  </div>
+  <script src="popup.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
