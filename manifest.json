@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AstroLocal",
+  "version": "1.0",
+  "description": "Get personalized astrological activity recommendations.",
+  "key": "YOUR_API_KEY",
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets.create"
+    ]
+  },
+  "permissions": ["storage", "alarms", "notifications", "identity", "https://www.googleapis.com/", "geolocation"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
